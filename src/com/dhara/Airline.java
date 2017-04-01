@@ -25,7 +25,7 @@ public class Airline
             if(random<6)
             {
                 if (plane[random] == false && fc < 6) {
-                    System.out.printf("Seat number %d \n", random);
+                    System.out.printf("Seat number %d %n", random);
                     plane[random] = true;
                     fc++;
                     i = true;
@@ -50,7 +50,7 @@ public class Airline
             if(random<11)
             {
                 if (plane[random] == false && ec < 6) {
-                    System.out.printf("Seat number %d \n", random);
+                    System.out.printf("Seat number %d %n", random);
                     plane[random] = true;
                     ec++;
                     i = true;

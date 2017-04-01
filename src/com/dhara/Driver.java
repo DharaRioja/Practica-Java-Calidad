@@ -51,9 +51,9 @@ public class Driver
         {
             avg1=travels[i].getMiles();
             avg2=travels[i].getGallon();
-            System.out.printf("Trip %d:  %.2f Miles/Gallon \n",i,travels[i].getMiles()/travels[i].getGallon());
+            System.out.printf("Trip %d:  %.2f Miles/Gallon %n",i,travels[i].getMiles()/travels[i].getGallon());
         }
-        System.out.printf("Travels  %.2f Miles/Gallon \n", (avg1/avg2));
+        System.out.printf("Travels  %.2f Miles/Gallon %n", (avg1/avg2));
 
     }
 }
