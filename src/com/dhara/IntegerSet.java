@@ -4,7 +4,7 @@ public class IntegerSet
 {
     private boolean[] set;
     private static boolean[] set_s;
-
+    private String cadena="";
     public IntegerSet()
     {
         set=new boolean[101];
@@ -28,7 +28,7 @@ public class IntegerSet
     public String toString()
     {
         boolean empty=false;
-        String c="";
+      
         for(int i=0;i<101;i++)
         {
             if(set[i]==true)
@@ -44,14 +44,14 @@ public class IntegerSet
             {
                 if(set[i]==true)
                 {
-                    c=c+String.valueOf(i)+" ";
+                    cadena=cadena+String.valueOf(i)+" ";
                 }
             }
-            return c;
+            return cadena;
         }
         else
         {
-            return c="---";
+            return cadena="---";
         }
 
     }

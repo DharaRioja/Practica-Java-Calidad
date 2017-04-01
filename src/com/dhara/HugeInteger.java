@@ -43,7 +43,7 @@ public class HugeInteger
 
     public int add(HugeInteger a)
     {
-        int cont1=0,cont2=0,n1=0,n2=0;
+        int n1=0,n2=0;
 
         for(int i=0;i<40;i++)
         {
