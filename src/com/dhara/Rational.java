@@ -85,7 +85,7 @@ public class Rational
                 d=d/i;
             }
         }
-        System.out.printf("The result is: %d/%d \n",n,d);
+        System.out.printf("The result is: %d/%d %n",n,d);
     }
 
     public String convert()

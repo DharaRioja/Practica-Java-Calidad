@@ -88,7 +88,7 @@ public class IntegerSet
     {
         for(int i=0;i<101;i++)
         {
-            System.out.printf("%d, %b \n",i,set_s[i]);
+            System.out.printf("%d, %b %n",i,set_s[i]);
         }
     }
 
