@@ -30,15 +30,16 @@ public class HugeInteger
 
     public String toString()
     {
-        String n="";
+        StringBuilder miString = new StringBuilder();
         for(int i=0;i<40;i++)
         {
             if(number[i]!=-1)
             {
-                n=n+String.valueOf(number[i]);
+            	miString=miString.append(number[i]);
             }
+            
         }
-        return n;
+        return miString.toString();
     }
 
     public int add(HugeInteger a)

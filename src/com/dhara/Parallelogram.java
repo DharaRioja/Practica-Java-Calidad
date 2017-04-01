@@ -2,17 +2,20 @@ package com.dhara;
 
 public class Parallelogram extends Quadrilateral
 {
-    private int base,height;
+    private int base;
+    private float height;
 
     public Parallelogram(Point point)
     {
+    	float baseFloat;
         this.point = point;
         base=point.getX_left()-point.getX_right();
         if(base<0)
         {
             base=base*(-1);
         }
-        height=(base/2)+(base%2);
+        baseFloat = base;
+        height=(baseFloat/2)+(baseFloat%2);
 
     }
 

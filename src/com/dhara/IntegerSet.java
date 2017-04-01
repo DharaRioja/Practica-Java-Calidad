@@ -27,6 +27,9 @@ public class IntegerSet
 
     public String toString()
     {
+    	StringBuilder miString = new StringBuilder();
+    	miString = miString.append(cadena);
+    	
         boolean empty=false;
       
         for(int i=0;i<101;i++)
@@ -44,14 +47,15 @@ public class IntegerSet
             {
                 if(set[i]==true)
                 {
-                    cadena=cadena+String.valueOf(i)+" ";
+                    miString = miString.append(i+" ");
                 }
             }
-            return cadena;
+            return miString.toString();
         }
         else
         {
-            return cadena="---";
+        	miString.delete(0, miString.length());
+            return miString.append("---").toString();
         }
 
     }
