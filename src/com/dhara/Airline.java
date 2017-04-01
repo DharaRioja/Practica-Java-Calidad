@@ -19,10 +19,9 @@ public class Airline
     {
         boolean resp=false;
         boolean i=false;
-        int random=0;
         while(i==false)
         {
-            random=(int)(Math.random()*5+1);
+            int random=(int)(Math.random()*5+1);
             if(random<6)
             {
                 if (plane[random] == false && fc < 6) {
@@ -45,10 +44,9 @@ public class Airline
     {
         boolean resp=false;
         boolean i=false;
-        int random=0;
         while(i==false)
         {
-            random=(int)(Math.random()*10+6);
+            int random = (int) (Math.random()*10+6);
             if(random<11)
             {
                 if (plane[random] == false && ec < 6) {
