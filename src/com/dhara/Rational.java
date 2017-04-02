@@ -96,8 +96,10 @@ public class Rational
 
     public String decimal(int d)
     {
+    	double numeratorDouble=numerator,denominatorDouble=denominator;
+    	
         int c=(int) Math.pow(10,d);
-        double n= Math.rint((numerator/denominator)*c)/c;
+        double n= Math.rint((numeratorDouble/denominatorDouble)*c)/c;
         String r=String.valueOf(n);
         return r;
     }
