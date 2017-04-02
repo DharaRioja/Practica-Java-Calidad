@@ -18,7 +18,10 @@ public class Rectangle extends Quadrilateral
 
     public float area()
     {
-        return base*height;
+    	float baseFloat = base;
+    	float heightFloat = height;
+    	
+        return baseFloat*heightFloat;
 
     }
 
