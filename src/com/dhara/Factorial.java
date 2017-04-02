@@ -44,7 +44,8 @@ public class Factorial
         int e=1;
         for(int i=1;i<=number;i++)
         {
-            e=e+((i^i)/factorialN(i));
+            e=e+((int)Math.pow(i,i)/factorialN(i));
+            
         }
         return e;
     }
