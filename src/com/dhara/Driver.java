@@ -53,7 +53,15 @@ public class Driver
             avg2=travels[i].getGallon();
             System.out.printf("Trip %d:  %.2f Miles/Gallon %n",i,travels[i].getMiles()/travels[i].getGallon());
         }
-        System.out.printf("Travels  %.2f Miles/Gallon %n", (avg1/avg2));
+        
+        if(avg2>0)
+        {
+        	System.out.printf("Travels  %.2f Miles/Gallon %n", (avg1/avg2));
+        }
+        else
+        {
+        	System.out.printf("The division is not possible %n");
+        }
 
     }
 }
